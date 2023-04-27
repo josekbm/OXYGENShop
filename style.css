@@ -6,20 +6,4 @@
 
 body {
   min-width: 320px;
-}
-
-.menu {
-  width: 100%;
-  border: 1px solid black;
-}
-.menu .menu_logo {
-  font-family: "Raleway";
-  color: #08A6E4;
-  margin-left: 25px;
-  margin-top: 17px;
-}
-.menu .menu_item {
-  font-family: "Open Sans";
-  color: #A5A5A5;
-  display: inline-block;
 }/*# sourceMappingURL=style.css.map */
