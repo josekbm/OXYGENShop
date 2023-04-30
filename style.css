@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 1px solid red;
 }
 
 body {
@@ -28,6 +29,9 @@ header {
   list-style-type: none;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.menu .menu_lista .menu_item {
+  margin-bottom: 14px;
 }
 .menu .menu_lista .menu_item a {
   text-decoration: none;
@@ -74,25 +78,69 @@ header {
 }
 .principal .principal_fondo {
   margin-top: 51px;
+  max-width: 100%;
 }
 
+.estad {
+  margin-bottom: 50px;
+}
 .estad h3 {
   font-family: "Raleway";
   text-align: center;
   font-size: 30px;
   font-weight: 300;
 }
-.estad blockquote {
+.estad .cantidad {
   font-family: "Raleway";
   font-weight: bold;
   font-size: 20px;
   text-align: center;
   letter-spacing: 5.96px;
 }
-.estad cite {
+.estad .objeto {
   font-family: "Raleway";
   font-weight: 400;
   font-size: 17px;
   text-align: center;
   font-style: normal;
+  margin-top: 1em;
+}
+
+.bloque1 {
+  background-color: #F7F7F7;
+  padding: 2em;
+}
+.bloque1 h3 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 30px;
+  max-width: 80%;
+  max-height: 25%;
+  margin-bottom: 1em;
+}
+.bloque1 p {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+.bloque1 .rec1, .bloque1 .rec2, .bloque1 .rec3 {
+  position: relative;
+  background-color: #fff;
+  padding: 2em;
+  margin-bottom: 41px;
+}
+.bloque1 img {
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.bloque1 .elip_azul {
+  position: relative;
+  height: 190px;
+  width: 190px;
+  display: block;
+  z-index: 1;
+  top: -200px;
+  left: 90px;
 }/*# sourceMappingURL=style.css.map */
