@@ -1,8 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@300&display=swap');
+
 * {
     box-sizing: border-box;
-   margin: 0;
-   padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 body {
-   min-width: 320px;
+    min-width: 320px;
+    
+}
+
+header {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+    width: 100%;
+}
+
+.menu {
+
+    nav {
+        padding-left: 25px;
+        padding-top: 17px;
+
+    }
+
+    .menu_logo {
+        font-family: "Raleway";
+        font-size: 32px;
+        font-weight: lighter;
+        color: #08A6E4;
+    }
+
+    .menu_lista {
+        list-style-type: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .menu_item {
+
+            a {
+                text-decoration: none;
+                font-family: "Open Sans";
+                font-size: 11px;
+                color: #a5a5a5;
+
+            }
+
+            a:hover {
+                color: black;
+                cursor: pointer;
+            }
+        }
+
+
+    }
+
+}
+.principal {
+    h2 {
+        text-align: center;
+        display: block;
+        padding-top: 100px;
+        font-family: "Raleway";
+        font-size: 35px;
+    }
+    p {
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 20px;
+        display: block;
+        
+    }
+    .abrir {
+        height: 67px;
+        min-width: 310px;
+        width:30%;
+        display: block;
+        color: #fff;
+        background: #08A6E4;
+        box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+        border-radius: 40px;
+        border: none;
+        font-family: "Open Sans";
+        font-size: 1rem;
+        position: relative;        
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 28px);
+        
+    }
+    .principal_fondo {
+        margin-top: 51px;
+    }
+       
+}
+.estad {
+    h3 {
+        font-family: "Raleway";
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+    }
+    blockquote {
+        font-family: "Raleway";
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 5.96px;
+    }
+    cite {
+        font-family: "Raleway";
+        font-weight: 400;
+        font-size: 17px;
+        text-align: center;
+        font-style: normal;
+    }
+    
 }

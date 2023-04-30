@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,87 +8,130 @@
     <link rel="stylesheet" href="style.css">
     <title>OXYGENShop</title>
 </head>
-<header class="menu">
-    
-    <h1 class="menu_logo">OXYGENShop</h1>
-        <input type="checkbox" id="menu_check">
-        <label id="menu" for="menu_check">
-            <span id="menu_abrir">&#9776;</span>
-            <span id="menu_cerrar">X</span>
-        </label>
-    <nav>    
-        <ul class="menu_lista">
-            <li class="menu_item"><a href="#">WHY US</a></li>
-            <li class="menu_item"><a href="#">BENEFITS</a></li>
-            <li class="menu_item"><a href="#">PRICES</a></li>
-            <li class="menu_item"><a href="#">CONTACT</a></li>
-        </ul>
-    </nav>
-    
+<header>
+    <div class="menu">
+        <nav>
+            <h1 class="menu_logo">OXYGENShop</h1>
+
+            <ul class="menu_lista">
+                <li class="menu_item"><a href="#">WHY US</a></li>
+                <li class="menu_item"><a href="#">BENEFITS</a></li>
+                <li class="menu_item"><a href="#">PRICES</a></li>
+                <li class="menu_item"><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
+
 <body>
-    <main class="principal">
-        <h2>Sell More!</h2>
-        <p>Open shop on our platform and increase your sales</p>
-        <p><a href="#">Open your shop</a></p>
-        <img class="main_fondo" src="/images/Fondo desktop.png" alt="fondo pc y manos">
-    
-    
-        <h3>The most popular sales platform in country</h3> 
-        <ul>
-            <li>
-                <img src="#" alt="Icono1">
-                <blockquote>100000+</blockquote> 
-                <cite>Daily Entries</cite>
-            </li>
-            <li>
-                <img src="#" alt="Icono2">
-                <blockquote>2000000+</blockquote> 
-                <cite>Seen products every day</cite>
-            </li>
-            <li>
-                <img src="#" alt="Icono3">
-                <blockquote>10000+</blockquote>
-                <cite>Added post daily</cite>
-            </li>
-        </ul>
+    <main>
+        <div class="principal">
+            <h2>Sell More!</h2>
+            <p>Open shop on our platform and increase your sales</p>
+            <button href="#" class="abrir">Open your shop</button>
+            <img class="principal_fondo" src="/images/Fondo Movil.png" alt="fondo pc y manos">
+        </div>
+
+        <div class="estad">
+            <h3>The most popular sales platform in country</h3>
+            <ul>
+                <li>
+                    <img src="/images/Persona.png" alt="persona">
+                    <img src="/images/Ellipse roja.png" alt="cir_rojo">
+                    <blockquote>100000+</blockquote>
+                    <cite>Daily Entries</cite>
+                </li>
+                <li>
+                    <img src="/images/Ojo.png" alt="ojo">
+                    <img src="/images/Ellipse azul.png" alt="cir_azul">
+                    <blockquote>2000000+</blockquote>
+                    <cite>Seen products every day</cite>
+                </li>
+                <li>
+                    <img src="/images/tarjetas.png" alt="multi">
+                    <img src="/images/Ellipse verde.png" alt="cir_verde">
+                    <blockquote>10000+</blockquote>
+                    <cite>Added post daily</cite>
+                </li>
+            </ul>
+        </div>
     </main>
     <aside class="bloque1">
         <div class="rec1">
-            <img src="/images/Macbook2 1.png" alt="Ordenador">
+            <img src="#" alt="Ordenador">
             <h3>Be always First</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
         <div class="rec2">
-            <img src="/images/iPhone2 1.png" alt="Movil">
+            <img src="#" alt="Movil">
             <h3>Your shop is were you are!</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
         <div class="rec3">
             <h3>increase recognition your brand!</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            <img src="/images/megafono.png" alt="Megáfono">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <img src="#" alt="Megáfono">
         </div>
     </aside>
     <aside>
-        
-        <h3>Pricing</h3>
 
+        <h3>Pricing</h3>
+        <div class="basic">
+            <p>Basic<span class="pricing_basic">$0</span></p>
+            <ul>
+                <li>100 MB HDD</li>
+                <li>1 Subdomain</li>
+                <li>2 E-mails</li>
+                <li>Two years license</li>
+                <li>Full support</li>
+            </ul>
+        </div>
+        <div class="prof">
+            <p>Professional<span class="pricing_prof">$25</span><span class="sub">Limited offer</span></p>
+            <ul>
+                <li>500 MB HDD</li>
+                <li>2 Subdomain</li>
+                <li>5 E-mails</li>
+                <li>One year license</li>
+                <li>Full support</li>
+            </ul>
+        </div>
+        <div class="premium">
+            <p>Premium<span class="pricing_premium">$60</span><span class="sub">Limited offer</span></p>
+            <ul>
+                <li>2 GB HDD</li>
+                <li>5 Subdomain</li>
+                <li>20 E-mails</li>
+                <li>Two year license</li>
+                <li>Full support</li>
+            </ul>
+        </div>
+        <h3>Any questions?</h3>
+        <p class="sub_form">Leave your email address or call us!</p>
+        <img src="images/sobre.png"><span>info@bestshop.xyz</span>
+        <img src="images/telefono.png"><span>123 456 789</span>
         <form>
             <label for="NAME">NAME</label>
             <input type="text" name="NAME">
             <label for="EMAIL">EMAIL</label>
             <input type="text" name="EMAIL">
             <input type="checkbox" name="aceptar">
-            <p>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+            <p>I hereby give consent for my personal data included in my application to be processed for the purposes of
+                the recruitment process under the European Parliament’s and Council of the European Union Regulation on
+                the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data
+                and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
             <input type="submit" value="Send">
         </form>
-        
-    <footer>
-        <h1>OXYGENShop</h1>
-        <p>&copy; 2023 OXYGEN, All Rights Reserved</p>
-        <span><img src="/images/Logo twitter.png" alt="logo twitter"></span>
-        <span><img src="/images/Logo Facebook.png" alt="logo facebook"></span>
-    </footer>
+
+        <footer class="pie">
+            <h1>OXYGENShop</h1>
+            <p>&copy; 2023 OXYGEN, All Rights Reserved</p>
+            <span><img src="/images/Logo twitter.png" alt="logo twitter"></span>
+            <span><img src="/images/Logo Facebook.png" alt="logo facebook"></span>
+        </footer>
 </body>
+
 </html>
