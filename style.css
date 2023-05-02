@@ -19,28 +19,33 @@ header {
   padding-left: 25px;
   padding-top: 17px;
 }
-.menu .menu_logo {
+.menu .menu--logo {
   font-family: "Raleway";
   font-size: 32px;
   font-weight: 300;
   color: #08A6E4;
 }
-.menu .menu_lista {
+.menu .menu--boton {
+  position: absolute;
+  top: 0;
+  left: 90%;
+}
+.menu .menu--lista {
   list-style-type: none;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.menu .menu_lista .menu_item {
+.menu .menu--lista .lista--item {
   margin-bottom: 14px;
 }
-.menu .menu_lista .menu_item a {
+.menu .menu--lista .lista--item a {
   text-decoration: none;
   font-family: "Open Sans";
   font-size: 11px;
   font-weight: 700;
   color: #a5a5a5;
 }
-.menu .menu_lista .menu_item a:hover {
+.menu .menu--lista .lista--item a:hover {
   color: black;
   cursor: pointer;
 }
@@ -77,28 +82,28 @@ header {
   left: 50%;
   transform: translate(-50%, 28px);
 }
-.principal .principal_fondo {
+.principal .fondo--principal {
   margin-top: 51px;
   max-width: 100%;
 }
 
-.estad {
+.estadistica {
   margin-bottom: 50px;
 }
-.estad h3 {
+.estadistica h3 {
   font-family: "Raleway";
   text-align: center;
   font-size: 30px;
   font-weight: 300;
 }
-.estad .cantidad {
+.estadistica .cantidad {
   font-family: "Raleway";
   font-weight: bold;
   font-size: 20px;
   text-align: center;
   letter-spacing: 5.96px;
 }
-.estad .objeto {
+.estadistica .objeto {
   font-family: "Raleway";
   font-weight: 400;
   font-size: 17px;
@@ -107,11 +112,11 @@ header {
   margin-top: 1em;
 }
 
-.bloque1 {
+.gancho {
   background-color: #F7F7F7;
   padding: 2em;
 }
-.bloque1 h3 {
+.gancho h3 {
   font-family: "Raleway";
   font-weight: 400;
   font-size: 30px;
@@ -119,24 +124,24 @@ header {
   max-height: 25%;
   margin-bottom: 1em;
 }
-.bloque1 p {
+.gancho p {
   font-size: 14px;
   font-family: "Open Sans";
   font-weight: 400;
   margin-bottom: 1em;
 }
-.bloque1 .rec1, .bloque1 .rec2, .bloque1 .rec3 {
+.gancho .gancho--rec1, .gancho .gancho--rec2, .gancho .gancho--rec3 {
   position: relative;
   background-color: #fff;
   padding: 2em;
   margin-bottom: 41px;
 }
-.bloque1 img {
+.gancho img {
   max-width: 100%;
   position: relative;
   z-index: 2;
 }
-.bloque1 .elip_azul {
+.gancho .elip_azul {
   position: relative;
   height: 190px;
   width: 190px;
@@ -147,43 +152,49 @@ header {
 }
 
 .pricing {
-  padding: 2em;
+  padding-top: 2em;
+  padding-left: 2em;
 }
 .pricing ul {
-  position: relative;
-  display: inline-block;
+  position: absolute;
   list-style: none;
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 14px;
   left: 50%;
-  bottom: 30%;
-  padding-left: 1em;
+  bottom: 12%;
+}
+.pricing ul li {
+  padding-bottom: 1em;
 }
 .pricing ul img {
   padding-right: 1em;
 }
-.pricing li {
-  padding-left: 1em;
+.pricing .basic--tittle, .pricing .premium--tittle, .pricing .prof--tittle {
+  position: absolute;
+  left: 15%;
+  top: 25%;
 }
-.pricing p {
+.pricing .basic--tittle p, .pricing .premium--tittle p, .pricing .prof--tittle p {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 20px;
   text-align: center;
-  width: 50%;
+  width: 100%;
 }
 .pricing .basic, .pricing .premium {
   min-height: 251px;
   max-width: 293px;
   position: relative;
   margin-bottom: 2em;
+  left: 12.5%;
 }
 .pricing .prof {
   min-height: 277px;
   max-width: 339px;
   position: relative;
   margin-bottom: 2em;
+  left: 6.25%;
 }
 .pricing h3 {
   font-family: "Raleway";
@@ -196,24 +207,19 @@ header {
   border-radius: 18px;
   margin-top: 1em;
 }
-.pricing .basic .pricing_basic {
+.pricing .basic .basic--pricing {
   color: #FB3B64;
   font-size: 46px;
   font-weight: 300;
   line-height: 64px;
   width: 50%;
 }
-.pricing .basic .sub {
-  font-family: "Raleway";
-  font-size: 12px;
-  font-weight: 700;
-}
 .pricing .prof {
   border: 1px solid #07ACE6;
   border-radius: 18px;
   box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
 }
-.pricing .prof .pricing_prof {
+.pricing .prof .prof--pricing {
   color: #07ACE6;
   font-size: 46px;
   font-weight: 300;
@@ -223,12 +229,13 @@ header {
   font-family: "Raleway";
   font-size: 12px;
   font-weight: 700;
+  width: 100%;
 }
 .pricing .premium {
   border: 1px solid #55DFB4;
   border-radius: 18px;
 }
-.pricing .premium .pricing_premium {
+.pricing .premium .premium--pricing {
   color: #55DFB4;
   font-size: 46px;
   font-weight: 300;
@@ -238,4 +245,5 @@ header {
   font-family: "Raleway";
   font-size: 12px;
   font-weight: 700;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
