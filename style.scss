@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@mixin letra_raleway {
+    font-family: "Raleway";
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,19 +29,25 @@ header {
 
     }
 
-    .menu_logo {
+    .menu--logo {
         font-family: "Raleway";
         font-size: 32px;
         font-weight: 300;
         color: #08A6E4;
     }
+    .menu--boton{
+        position: absolute;
+        top: 0;
+        left: 90%;
+        .boton:checked {}
+    }
 
-    .menu_lista {
+    .menu--lista {
         list-style-type: none;
         padding-top: 20px;
         padding-bottom: 20px;
 
-        .menu_item {
+        .lista--item {
             margin-bottom: 14px;
             a {
                 text-decoration: none;
@@ -90,15 +101,15 @@ header {
         top: 50%;
         left: 50%;
         transform: translate(-50%, 28px);
-        
     }
-    .principal_fondo {
+    
+    .fondo--principal {
         margin-top: 51px;
         max-width: 100%;
     }
        
 }
-.estad {
+.estadistica {
     margin-bottom: 50px;
     h3 {
         font-family: "Raleway";
@@ -123,7 +134,7 @@ header {
     }
     
 }
-.bloque1 {
+.gancho {
     background-color: #F7F7F7;
     padding: 2em;
 
@@ -142,7 +153,7 @@ header {
         font-weight: 400;
         margin-bottom: 1em;
     }
-    .rec1, .rec2, .rec3 {
+    .gancho--rec1, .gancho--rec2, .gancho--rec3 {
         position: relative;
         background-color: #fff;
         padding: 2em;
@@ -169,48 +180,59 @@ header {
     
 }
 .pricing {
-    padding: 2em;
+    padding-top: 2em;
+    padding-left: 2em;
+
     ul {
-        position: relative;
-        display: inline-block;
+        position: absolute;        
         list-style: none;
         font-family: "Open Sans";
         font-weight: 400;
         font-size: 14px;
         left: 50%;
-        bottom: 30%;
-        padding-left: 1em;
+        bottom: 12%;
+        
+        li{
+            padding-bottom: 1em;
+        }       
         
         img {
             padding-right: 1em;
-        }
-        
+        }       
 
     }
-    li {
-        padding-left: 1em;
+    .basic--tittle, .premium--tittle, .prof--tittle {
+        position: absolute;
+        left: 15%;
+        top: 25%;
         
+        p {
         
+            font-family: "Raleway";
+            font-weight: 700;
+            font-size: 20px;
+            text-align: center;            
+            width: 100%;            
+        }
+
     }
-    p {
-        font-family: "Raleway";
-        font-weight: 700;
-        font-size: 20px;
-        text-align: center;
-        width: 50%;                
-        
-    }
+    
+     
+
+    
     .basic, .premium {
         min-height: 251px;
         max-width: 293px;
         position: relative;
         margin-bottom: 2em;
+        left: 12.5%;
     }
     .prof {
         min-height: 277px;
         max-width: 339px;
         position: relative;
         margin-bottom: 2em;
+        left: 6.25%;
     }
     h3 {
         font-family: "Raleway";
@@ -221,28 +243,24 @@ header {
     .basic {
         border: 1px solid #FB3B64;
         border-radius: 18px;
-        margin-top: 1em;
+        margin-top: 1em;      
         
-        
-        .pricing_basic {            
+        .basic--pricing {            
             color: #FB3B64;
             font-size: 46px;
             font-weight: 300;
             line-height: 64px;
             width: 50%;
+            
         }        
-        .sub {
-            font-family: "Raleway";
-            font-size: 12px;
-            font-weight: 700;
-        }
+        
     }
     .prof {
         border: 1px solid #07ACE6;
         border-radius: 18px;
         box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
         
-        .pricing_prof {
+        .prof--pricing {
             color: #07ACE6;
             font-size: 46px;
             font-weight: 300;
@@ -252,13 +270,14 @@ header {
             font-family: "Raleway";
             font-size: 12px;
             font-weight: 700;
+            width: 100%;
         }
     }
     .premium {
         border: 1px solid #55DFB4;
         border-radius: 18px;
         
-        .pricing_premium {
+        .premium--pricing {
             color: #55DFB4;
             font-size: 46px;
             font-weight: 300;
@@ -268,6 +287,7 @@ header {
             font-family: "Raleway";
             font-size: 12px;
             font-weight: 700;
+            width: 100%;
         }
     }
     
