@@ -189,7 +189,6 @@
   .ventajas {
     background-color: #F7F7F7;
     padding: 2em;
-    position: relative;
   }
   .ventajas h3 {
     font-family: "Raleway";
@@ -205,9 +204,16 @@
     font-weight: 400;
     margin-bottom: 1em;
   }
-  .ventajas .marco {
+  .ventajas .marco1, .ventajas .marco2, .ventajas .marco3 {
     margin: 23px 0;
     background-color: #FFFFFF;
+    position: relative;
+  }
+  .ventajas .marco1 img[class], .ventajas .marco2 img[class], .ventajas .marco3 img[class] {
+    position: relative;
+    text-align: center;
+    width: 50%;
+    height: 50%;
   }
   .pricing {
     position: relative;
