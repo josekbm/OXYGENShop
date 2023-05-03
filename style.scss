@@ -191,68 +191,90 @@
     }
 
     .principal {
+        margin-top: 170px;
+        text-align: center;
+        color: #000000;
         h2 {
-            text-align: center;
-            display: block;
-            padding-top: 100px;
-            font-family: "Raleway";
+            font-family: "raleway", sans-serif;
+            font-style: normal;
+            font-weight: 400;
             font-size: 35px;
+            line-height: 41px;
         }
 
         p {
-            text-align: center;
             font-family: "Open Sans";
             font-size: 16px;
             font-weight: 400;
-            padding-top: 20px;
-            display: block;
+            line-height: 23px;
+            margin: 20px 33px 28px;
 
         }
 
-        .abrir {
+        .principal--abrir {
+
             height: 67px;
-            min-width: 310px;
-            width: 30%;
-            display: block;
-            color: #fff;
+            width: 90%;
             background: #08A6E4;
+            border: #08A6E4;
             box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
             border-radius: 40px;
-            border: none;
+            cursor: pointer;
+
+            & p {
+            color: white;
             font-family: "Open Sans";
             font-size: 1rem;
-            position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, 28px);
-        }
+            font-weight: 700;            
+            text-align: center;
+            }
+        }        
 
-        .fondo--principal {
+    }
+
+    .fondo {
+
+        .fondo--imagen {
+            height: 267px;
             margin-top: 51px;
             width: 100%;
+            background-image: url(./images/Fondo_desktop.png);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+        }
+        p {
+            font-family: "Raleway", sans-serif;
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 35px;
+            text-align: center;
+            margin: 13px 36px 25px;
         }
 
     }
 
     .estadistica {
-        margin-bottom: 50px;
+        position: relative;
 
-        h3 {
-            font-family: "Raleway";
+        .vector{
+            position: relative;
             text-align: center;
-            font-size: 30px;
-            font-weight: 300;
-        }
+            margin-bottom: 25px;
+            .persona, .ojo, .tarjetas {
+                position: absolute;
+                left: 50%;
+                top: 10%;
+            }
+        }     
 
         .cantidad {
             font-family: "Raleway";
-            font-weight: bold;
+            font-weight: 800;
             font-size: 20px;
             text-align: center;
             letter-spacing: 5.96px;
+            line-height: 24px;
         }
 
         .objeto {
@@ -266,9 +288,10 @@
 
     }
 
-    .gancho {
+    .ventajas {
         background-color: #F7F7F7;
         padding: 2em;
+        position: relative;
 
         h3 {
             font-family: "Raleway";
@@ -286,35 +309,11 @@
             font-weight: 400;
             margin-bottom: 1em;
         }
-
-        .gancho--rec1,
-        .gancho--rec2,
-        .gancho--rec3 {
-            position: relative;
-            background-color: #fff;
-            padding: 2em;
-            margin-bottom: 41px;
+        .marco {
+            margin: 23px 0;
+            background-color: #FFFFFF;
+            
         }
-
-        img {
-            max-width: 100%;
-            position: relative;
-            z-index: 2;
-
-
-        }
-
-        .elip_azul {
-            position: relative;
-            height: 190px;
-            width: 190px;
-            display: block;
-            z-index: 1;
-            top: -200px;
-            left: 90px;
-
-        }
-
 
     }
 
@@ -455,4 +454,8 @@
         }
 
     }
+}
+
+@media only screen and (min-width: 1000px) {
+
 }

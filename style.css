@@ -105,60 +105,78 @@
     color: black;
     cursor: pointer;
   }
-  .principal h2 {
+  .principal {
+    margin-top: 170px;
     text-align: center;
-    display: block;
-    padding-top: 100px;
-    font-family: "Raleway";
+    color: #000000;
+  }
+  .principal h2 {
+    font-family: "raleway", sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 35px;
+    line-height: 41px;
   }
   .principal p {
-    text-align: center;
     font-family: "Open Sans";
     font-size: 16px;
     font-weight: 400;
-    padding-top: 20px;
-    display: block;
+    line-height: 23px;
+    margin: 20px 33px 28px;
   }
-  .principal .abrir {
+  .principal .principal--abrir {
     height: 67px;
-    min-width: 310px;
-    width: 30%;
-    display: block;
-    color: #fff;
+    width: 90%;
     background: #08A6E4;
+    border: #08A6E4;
     box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
     border-radius: 40px;
-    border: none;
+    cursor: pointer;
+  }
+  .principal .principal--abrir p {
+    color: white;
     font-family: "Open Sans";
     font-size: 1rem;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 28px);
+    font-weight: 700;
+    text-align: center;
   }
-  .principal .fondo--principal {
+  .fondo .fondo--imagen {
+    height: 267px;
     margin-top: 51px;
     width: 100%;
+    background-image: url(./images/Fondo_desktop.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
-  .estadistica {
-    margin-bottom: 50px;
-  }
-  .estadistica h3 {
-    font-family: "Raleway";
-    text-align: center;
-    font-size: 30px;
+  .fondo p {
+    font-family: "Raleway", sans-serif;
     font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    margin: 13px 36px 25px;
+  }
+  .estadistica {
+    position: relative;
+  }
+  .estadistica .vector {
+    position: relative;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .estadistica .vector .persona, .estadistica .vector .ojo, .estadistica .vector .tarjetas {
+    position: absolute;
+    left: 50%;
+    top: 10%;
   }
   .estadistica .cantidad {
     font-family: "Raleway";
-    font-weight: bold;
+    font-weight: 800;
     font-size: 20px;
     text-align: center;
     letter-spacing: 5.96px;
+    line-height: 24px;
   }
   .estadistica .objeto {
     font-family: "Raleway";
@@ -168,11 +186,12 @@
     font-style: normal;
     margin-top: 1em;
   }
-  .gancho {
+  .ventajas {
     background-color: #F7F7F7;
     padding: 2em;
+    position: relative;
   }
-  .gancho h3 {
+  .ventajas h3 {
     font-family: "Raleway";
     font-weight: 400;
     font-size: 30px;
@@ -180,33 +199,15 @@
     max-height: 25%;
     margin-bottom: 1em;
   }
-  .gancho p {
+  .ventajas p {
     font-size: 14px;
     font-family: "Open Sans";
     font-weight: 400;
     margin-bottom: 1em;
   }
-  .gancho .gancho--rec1,
-  .gancho .gancho--rec2,
-  .gancho .gancho--rec3 {
-    position: relative;
-    background-color: #fff;
-    padding: 2em;
-    margin-bottom: 41px;
-  }
-  .gancho img {
-    max-width: 100%;
-    position: relative;
-    z-index: 2;
-  }
-  .gancho .elip_azul {
-    position: relative;
-    height: 190px;
-    width: 190px;
-    display: block;
-    z-index: 1;
-    top: -200px;
-    left: 90px;
+  .ventajas .marco {
+    margin: 23px 0;
+    background-color: #FFFFFF;
   }
   .pricing {
     position: relative;
