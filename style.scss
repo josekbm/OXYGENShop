@@ -69,19 +69,26 @@
 
 }
 @mixin marcos {
-    .marco1, .marco2, .marco3 {
-        margin: 23px 0;
-        background-color: #FFFFFF;
-        position: relative; 
+    .marco1, .marco2 {
+        height: 370px;
+        border: 1px solid #E8E9ED;
+        background-color: #fff;
+        margin: 42px 30px 0;
+        border-radius: 5px;
+        position: relative;
         img[class] {
-            
-            position: relative;
-            text-align: center;
-            width: 50%;
-            height: 50%;
-            
+            position: absolute;
         }
+         
+        
     }
+}
+@mixin titulos {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
 }
 
 * {
@@ -309,12 +316,14 @@
         
 
         h3 {
-            font-family: "Raleway";
+            height: 72px;
+            width: 80%;
+            font-family: 'Raleway';
+            font-style: normal;
             font-weight: 400;
             font-size: 30px;
-            max-width: 80%;
-            max-height: 25%;
-            margin-bottom: 1em;
+            line-height: 35px;
+            margin: 174px 94px 10px 22px;
 
         }
 
@@ -322,19 +331,61 @@
             font-size: 14px;
             font-family: "Open Sans";
             font-weight: 400;
-            margin-bottom: 1em;
+            margin: 0 21px 30px;
+            line-height: 21px;
         }
         
         @include marcos;
 
-        
-            
-        
+        .objeto1 {
+            top: 37px;
+            right: 25%;
+            z-index: 1;
+        }
+        .objeto2 {
+            top: 15px;
+            right: 25%;
+            border-radius: 41px;
+        }
+        .objeto3 {
+            top: 19px;
+            right: 50px;
+            z-index: 1;
+        }
+        .objeto4 {
+            top: 15px;
+            right: 93px;
+        }
+        .marco3 {
+            height: 100%;
+            border: 1px solid #E8E9ED;
+            background-color: #fff;
+            margin: 42px 30px 0;
+            border-radius: 5px;
+            position: relative;
+            .marco3--tittle {
+                margin: 31px 20px 20px;
+            }
+            .marco3--text {
+                margin: 0 20px 24px;
+            }
+            .marco3--imagen-verde {
+                position: relative;
+                margin: 0px 30px 100px;
+                background-color:  #55DFB4;
+                border-radius: 5px;
+                .objeto5 {
+                    margin-top: 25px;
+                    width: 90%;
+                    max-width: 350px;
+                }
+            }
+        }       
 
     }
 
     .pricing {
-        
+        margin-top: 53.34px;
         position: relative;
 
         h3 {
@@ -469,6 +520,127 @@
             }
         }
 
+    }
+    .formulario {
+        position: relative;
+        margin-left: 8%;
+        h3 {
+            @include titulos;
+            margin: 50px 0 5px;
+        }
+        .sub--form {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 38px;
+        }
+        .contacto {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: #A5A5A5;
+            margin-bottom: 17px;
+
+            & img{
+                margin-right: 11px;
+            }
+        }
+        label {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 15px;
+            letter-spacing: 3.28px;
+            color: #08A6E4;
+            margin-bottom: 42px;
+        }
+        input {
+            border: none;
+            border-bottom: 1px solid #95989A;
+            margin: 42px 0;
+        }
+        .protec--datos {
+            display: table;
+            position:relative;
+            width: 85%;
+
+            .aceptar {
+                display: table-cell;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            p {
+                display: table-cell;
+                vertical-align: middle;
+                height: 144px;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: #707070;
+                width: 95%;
+            }
+        }
+        .enviar {
+            height: 57px;
+            width:60%;
+            background: #08A6E4;
+            color: #FFFFFF;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 18px;
+            border: 1px solid #08A6E4;
+            box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+            border-radius: 35px;
+            margin: 33px 0px 0px 31% ;
+            cursor: pointer;
+        }            
+
+    }
+    footer{
+        position: relative;
+        width: 100%;
+        height: 89px;
+        left: 0px;
+        bottom: 0px;
+        margin-top: 44px;
+        background: #F7F7F7;
+        box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
+        h1 {
+            margin: 22px 0 0 5%;
+            font-family: "Raleway";
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 30px;
+            display: inline-block;
+            color: #08A6E4;
+        }
+        p {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 15px;
+            color: #A5A5A5;
+            margin-left: 5%; 
+        }
+        .redes {
+            position: absolute;
+            top: 33px;
+            right: 30px;
+            img {
+                margin: 0 5px 0;
+                cursor: pointer;
+            }
+        }
     }
 }
 
