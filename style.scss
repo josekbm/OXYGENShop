@@ -90,12 +90,28 @@
     font-size: 40px;
     line-height: 47px;
 }
+@mixin marcos--mobile {
+    
+    h3 {
+        margin: 91px 0 30px 36px;                
+        max-width: 40%;
+        font-size: 36px;
+        line-height: 42px;                
+    }
+    p {
+        max-width: 40%;
+        margin: 0 0 91px 36px;
+        padding-bottom: 50px;        
+        font-size: 1em;
+        line-height: 22px;
+    }
+}
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /*border: 1px solid red;*/
+    
 }
 
 @media only screen and (min-width: 320px) {
@@ -351,6 +367,7 @@
             top: 37px;
             right: 25%;
             z-index: 1;
+            
         }
         .objeto2 {
             top: 15px;
@@ -367,30 +384,46 @@
             right: 93px;
         }
         .marco3 {
+            position: relative;
             height: 100%;
+            max-height: 314px;
             border: 1px solid #E8E9ED;
-            background-color: #fff;
+            background-color: #FFFFFF;
             margin: 42px 30px 0;
             border-radius: 5px;
-            position: relative;
+            
             .marco3--tittle {
-                margin: 31px 20px 20px;
+                width: 80%;
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 35px;
+                margin: 31px 6% 6%;
             }
             .marco3--text {
-                margin: 0 20px 24px;
+                font-family: "Open Sans", sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 21px;
+                margin: 31px 6% 6%;
             }
-            .marco3--imagen-verde {
-                position: relative;
-                margin: 0px 30px 100px;
-                background-color:  #55DFB4;
-                border-radius: 5px;
-                .objeto5 {
-                    margin-top: 25px;
-                    width: 90%;
-                    max-width: 350px;
-                }
+        }
+        .marco3--imagen-verde {
+            position: relative;
+            height: 195px;
+            margin: 0px 30px;
+            background-color:  #55DFB4;
+            border-radius: 5px;
+            .objeto5 {
+                position: absolute;
+                top: 25px;
+                width: 90%;
+                max-width: 350px;
             }
-        }       
+        }
+               
 
     }
 
@@ -534,84 +567,89 @@
     .formulario {
         position: relative;
         margin-left: 8%;
-        h3 {
-            @include titulos;
-            margin: 50px 0 5px;
-        }
-        .sub--form {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 22px;
-            margin-bottom: 38px;
-        }
-        .contacto {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 22px;
-            color: #A5A5A5;
-            margin-bottom: 17px;
-
-            & img{
-                margin-right: 11px;
+        .form--text {
+            h3 {
+                @include titulos;
+                margin: 50px 0 5px;
             }
-        }
-        label {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 11px;
-            line-height: 15px;
-            letter-spacing: 3.28px;
-            color: #08A6E4;
-            margin-bottom: 42px;
-        }
-        input {
-            border: none;
-            border-bottom: 1px solid #95989A;
-            margin: 42px 0;
-        }
-        .protec--datos {
-            display: table;
-            position:relative;
-            width: 85%;
-
-            .aceptar {
-                display: table-cell;
-                vertical-align: middle;
-                margin-right: 10px;
-            }
-            p {
-                display: table-cell;
-                vertical-align: middle;
-                height: 144px;
+            .form--sub {
                 font-family: 'Open Sans';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 12px;
-                line-height: 16px;
-                color: #707070;
-                width: 95%;
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 38px;
             }
+            
+            .datos--contacto {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                color: #A5A5A5;
+                margin-bottom: 17px;
+                & img{
+                    margin-right: 11px;
+                }
+            }
+            
         }
-        .enviar {
-            height: 57px;
-            width:60%;
-            background: #08A6E4;
-            color: #FFFFFF;
-            font-family: 'Open Sans', sans-serif;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 13px;
-            line-height: 18px;
-            border: 1px solid #08A6E4;
-            box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
-            border-radius: 35px;
-            margin: 33px 0px 0px 31% ;
-            cursor: pointer;
+        .form--fields {
+            label {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 11px;
+                line-height: 15px;
+                letter-spacing: 3.28px;
+                color: #08A6E4;
+                margin-bottom: 42px;
+            }
+            input {
+                border: none;
+                border-bottom: 1px solid #95989A;
+                margin: 42px 0;
+            }
+            .protec--datos {
+                display: table;
+                position:relative;
+                width: 85%;
+
+                .aceptar {
+                    display: table-cell;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                }
+                p {
+                    display: table-cell;
+                    vertical-align: middle;
+                    height: 144px;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #707070;
+                    width: 95%;
+                }
+            }
+            .enviar {
+                height: 57px;
+                width:60%;
+                background: #08A6E4;
+                color: #FFFFFF;
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 18px;
+                border: 1px solid #08A6E4;
+                box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+                border-radius: 35px;
+                margin: 33px 0px 0px 31% ;
+                cursor: pointer;
+            }
         }            
 
     }
@@ -686,33 +724,163 @@
                 display: flex;               
                 position: relative;
                 align-items: center;                
-                margin-left: 105px;
+                margin-left: 105px;                
+            }
+            .lista--item:hover {                    
+                border-bottom: 4px solid #08A6E4;                
             }
         }    
     }
     .principal {
         .principal--abrir{
             max-width: 440px;
-        }
-       
+        }       
     }
     .fondo {
-
         .fondo--imagen {
             height: 594px;            
         }
     }
     .estadistica {
-        margin-top: 100px;
-        margin-bottom: 122px;        
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        justify-content:space-evenly;        
+        margin: 100px 391px 122px 412px;               
+        display: flex;        
+        justify-content:space-between;        
     }
     .ventajas {
+        padding: 105px 252px 105.33px 251px;
         
-
+        .marco1 {            
+            @include marcos--mobile;           
+            p {                
+                border-bottom: 4px solid #FB3B64;
+            }
+            .objeto1 {
+                top: 20%;
+                right: 5%;
+                width: 384.44px;
+                height: 219px;
+                padding-left: 384.44px;
+                background-image: url(images/Macbook2\ 1.png);                
+            }
+            .objeto2 {
+                /*scale: 187%;*/
+                top: 7%;
+                right: 4%;
+                width: 184px;
+                height: 184px;
+                padding-left: 184px;
+                background-image: url(images/rombo\ rojo.png);
+                background-position: center;
+                background-size: cover;                
+            }           
+        }
+        .marco2 {
+            @include marcos--mobile;
+            h3 {
+                position: relative;
+                left: 52%;
+                max-width: 259px;
+            }            
+            p { 
+                position: relative;               
+                border-bottom: 4px solid #08A6E4;
+                left: 52%;
+            }
+            .objeto3 {
+                width: 426px;
+                height: 328px;
+                padding-left: 426px;
+                background-image: url(images/iPhone2\ 1.png);
+                right: 50%;
+            }
+            .objeto4{
+                width: 320px;
+                height: 320px;
+                padding-left: 320px;
+                background-image: url(images/Ellipse\ 3\ \(1\).png);
+                right: 62%;
+                
+            }            
+        }
+        .marco3 {
+            display: flex;
+            justify-content: space-between;      
+            background-color: #F7F7F7;
+            border: none;
+            h3 {
+                max-width: 348px;
+            }            
+            p {
+                margin-bottom: 70.67px;
+                border-bottom: 4px solid #55DFB4;                
+                padding-bottom: 50px;
+                max-width: 416px;
+            }
+            .marco3--card {
+                max-height: 370px;
+                width: 623.04px;
+                background-color: #fff;
+            }
+            .marco3--imagen-verde {
+                margin: 0;                
+                width: 440px;
+                height: 370px;                
+            }            
+        }
     }
-    .pricing {}
+    .pricing {
+        margin: 127.5px 180px; 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 3fr;
+        align-items: center;
+        justify-items: space-around;
+        h3 {
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+        .basic, .prof, .premium {
+            grid-row-start: 2;
+            display: grid;
+            justify-items: center;
+                    
+        }
+        .basic, .premium {
+            max-width: 372px;
+            max-height: 461px;
+        }
+        .prof {
+            max-height: 500px;
+            max-width: 405px;
+        }
+    }
+    .formulario {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: start;
+        .form--text {
+            margin-right: 113px;
+            display: flex;
+            flex-direction: column;
+            text-align: end; 
+            h3 {
+                margin: 0;            
+            }           
+        }
+        .form--fields {
+            width: 440px;
+            #name, #email {
+                width: 80%;
+            }
+            .enviar {
+                max-width: 226px;
+                max-height: 57px;
+                
+            }
+        }       
+    }
+    
+    
 }

@@ -4,7 +4,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /*border: 1px solid red;*/
 }
 
 @media only screen and (min-width: 320px) {
@@ -244,27 +243,41 @@
     right: 93px;
   }
   .ventajas .marco3 {
+    position: relative;
     height: 100%;
+    max-height: 314px;
     border: 1px solid #E8E9ED;
-    background-color: #fff;
+    background-color: #FFFFFF;
     margin: 42px 30px 0;
     border-radius: 5px;
-    position: relative;
   }
   .ventajas .marco3 .marco3--tittle {
-    margin: 31px 20px 20px;
+    width: 80%;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 31px 6% 6%;
   }
   .ventajas .marco3 .marco3--text {
-    margin: 0 20px 24px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 31px 6% 6%;
   }
-  .ventajas .marco3 .marco3--imagen-verde {
+  .ventajas .marco3--imagen-verde {
     position: relative;
-    margin: 0px 30px 100px;
+    height: 195px;
+    margin: 0px 30px;
     background-color: #55DFB4;
     border-radius: 5px;
   }
-  .ventajas .marco3 .marco3--imagen-verde .objeto5 {
-    margin-top: 25px;
+  .ventajas .marco3--imagen-verde .objeto5 {
+    position: absolute;
+    top: 25px;
     width: 90%;
     max-width: 350px;
   }
@@ -480,7 +493,7 @@
     position: relative;
     margin-left: 8%;
   }
-  .formulario h3 {
+  .formulario .form--text h3 {
     font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
@@ -488,7 +501,7 @@
     line-height: 47px;
     margin: 50px 0 5px;
   }
-  .formulario .sub--form {
+  .formulario .form--text .form--sub {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
@@ -496,7 +509,7 @@
     line-height: 22px;
     margin-bottom: 38px;
   }
-  .formulario .contacto {
+  .formulario .form--text .datos--contacto {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
@@ -505,10 +518,10 @@
     color: #A5A5A5;
     margin-bottom: 17px;
   }
-  .formulario .contacto img {
+  .formulario .form--text .datos--contacto img {
     margin-right: 11px;
   }
-  .formulario label {
+  .formulario .form--fields label {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
@@ -518,22 +531,22 @@
     color: #08A6E4;
     margin-bottom: 42px;
   }
-  .formulario input {
+  .formulario .form--fields input {
     border: none;
     border-bottom: 1px solid #95989A;
     margin: 42px 0;
   }
-  .formulario .protec--datos {
+  .formulario .form--fields .protec--datos {
     display: table;
     position: relative;
     width: 85%;
   }
-  .formulario .protec--datos .aceptar {
+  .formulario .form--fields .protec--datos .aceptar {
     display: table-cell;
     vertical-align: middle;
     margin-right: 10px;
   }
-  .formulario .protec--datos p {
+  .formulario .form--fields .protec--datos p {
     display: table-cell;
     vertical-align: middle;
     height: 144px;
@@ -545,7 +558,7 @@
     color: #707070;
     width: 95%;
   }
-  .formulario .enviar {
+  .formulario .form--fields .enviar {
     height: 57px;
     width: 60%;
     background: #08A6E4;
@@ -631,6 +644,9 @@
     align-items: center;
     margin-left: 105px;
   }
+  .menu .menu--lista .lista--item:hover {
+    border-bottom: 4px solid #08A6E4;
+  }
   .principal .principal--abrir {
     max-width: 440px;
   }
@@ -638,11 +654,159 @@
     height: 594px;
   }
   .estadistica {
-    margin-top: 100px;
-    margin-bottom: 122px;
+    margin: 100px 391px 122px 412px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .ventajas {
+    padding: 105px 252px 105.33px 251px;
+  }
+  .ventajas .marco1 h3 {
+    margin: 91px 0 30px 36px;
+    max-width: 40%;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .ventajas .marco1 p {
+    max-width: 40%;
+    margin: 0 0 91px 36px;
+    padding-bottom: 50px;
+    font-size: 1em;
+    line-height: 22px;
+  }
+  .ventajas .marco1 p {
+    border-bottom: 4px solid #FB3B64;
+  }
+  .ventajas .marco1 .objeto1 {
+    top: 20%;
+    right: 5%;
+    width: 384.44px;
+    height: 219px;
+    padding-left: 384.44px;
+    background-image: url(images/Macbook2\ 1.png);
+  }
+  .ventajas .marco1 .objeto2 {
+    /*scale: 187%;*/
+    top: 7%;
+    right: 4%;
+    width: 184px;
+    height: 184px;
+    padding-left: 184px;
+    background-image: url(images/rombo\ rojo.png);
+    background-position: center;
+    background-size: cover;
+  }
+  .ventajas .marco2 h3 {
+    margin: 91px 0 30px 36px;
+    max-width: 40%;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .ventajas .marco2 p {
+    max-width: 40%;
+    margin: 0 0 91px 36px;
+    padding-bottom: 50px;
+    font-size: 1em;
+    line-height: 22px;
+  }
+  .ventajas .marco2 h3 {
+    position: relative;
+    left: 52%;
+    max-width: 259px;
+  }
+  .ventajas .marco2 p {
+    position: relative;
+    border-bottom: 4px solid #08A6E4;
+    left: 52%;
+  }
+  .ventajas .marco2 .objeto3 {
+    width: 426px;
+    height: 328px;
+    padding-left: 426px;
+    background-image: url(images/iPhone2\ 1.png);
+    right: 50%;
+  }
+  .ventajas .marco2 .objeto4 {
+    width: 320px;
+    height: 320px;
+    padding-left: 320px;
+    background-image: url(images/Ellipse\ 3\ \(1\).png);
+    right: 62%;
+  }
+  .ventajas .marco3 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7F7F7;
+    border: none;
+  }
+  .ventajas .marco3 h3 {
+    max-width: 348px;
+  }
+  .ventajas .marco3 p {
+    margin-bottom: 70.67px;
+    border-bottom: 4px solid #55DFB4;
+    padding-bottom: 50px;
+    max-width: 416px;
+  }
+  .ventajas .marco3 .marco3--card {
+    max-height: 370px;
+    width: 623.04px;
+    background-color: #fff;
+  }
+  .ventajas .marco3 .marco3--imagen-verde {
+    margin: 0;
+    width: 440px;
+    height: 370px;
+  }
+  .pricing {
+    margin: 127.5px 180px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    align-items: center;
+    justify-items: space-around;
+  }
+  .pricing h3 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  .pricing .basic, .pricing .prof, .pricing .premium {
+    grid-row-start: 2;
+    display: grid;
+    justify-items: center;
+  }
+  .pricing .basic, .pricing .premium {
+    max-width: 372px;
+    max-height: 461px;
+  }
+  .pricing .prof {
+    max-height: 500px;
+    max-width: 405px;
+  }
+  .formulario {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    justify-content: space-evenly;
+    align-items: start;
+  }
+  .formulario .form--text {
+    margin-right: 113px;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+  }
+  .formulario .form--text h3 {
+    margin: 0;
+  }
+  .formulario .form--fields {
+    width: 440px;
+  }
+  .formulario .form--fields #name, .formulario .form--fields #email {
+    width: 80%;
+  }
+  .formulario .form--fields .enviar {
+    max-width: 226px;
+    max-height: 57px;
   }
 }/*# sourceMappingURL=style.css.map */
