@@ -452,7 +452,6 @@
 
     .pricing {
         position: relative;
-
         h3 {
             font-family: "Raleway";
             font-size: 36px;
@@ -461,159 +460,164 @@
             line-height: 42px;
             margin-bottom: 14px;
         }
+        .pricing--table{
+            
 
-        .basic {
-            position: relative;
-            border: 1px solid #FB3B64;
-            border-radius: 18px;
-            margin: 0px 11% 54px;
-            width: 75%;
-            padding: 25px 0;
-            display: table;
+            
 
-            & div {
-                display: table-cell;
-                vertical-align: middle;
-                width: 50%;
-            }
-
-            .basic--tittle {
-                p {
-                    text-align: center;
-                    font-family: 'Raleway';
-                    font-weight: 700;
-                    font-size: 20px;
-                    line-height: 24px;
-                    color: #13253B;
-                }
-
-                .basic--pricing {
-                    font-family: 'Open Sans';
-                    font-style: normal;
-                    font-weight: 300;
-                    font-size: 46px;
-                    line-height: 64px;
-                    color: #FB3B64;
-                }
-            }
-
-            @include tabla--precios;
-
-            .basic--boton {
-                @include boton-position;
-                background: #EB476E;
+            .basic {
+                position: relative;
                 border: 1px solid #FB3B64;
+                border-radius: 18px;
+                margin: 0px 11% 54px;
+                width: 75%;
+                padding: 25px 0;
+                display: table;
 
-                & p {
-                    @include text-boton;
+                & div {
+                    display: table-cell;
+                    vertical-align: middle;
+                    width: 50%;
                 }
+
+                .basic--tittle {
+                    p {
+                        text-align: center;
+                        font-family: 'Raleway';
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #13253B;
+                    }
+
+                    .basic--pricing {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 46px;
+                        line-height: 64px;
+                        color: #FB3B64;
+                    }
+                }
+
+                @include tabla--precios;
+
+                .basic--boton {
+                    @include boton-position;
+                    background: #EB476E;
+                    border: 1px solid #FB3B64;
+
+                    & p {
+                        @include text-boton;
+                    }
+                }
+
             }
 
-        }
-
-        .prof {
-            position: relative;
-            border: 1px solid #07ACE6;
-            border-radius: 18px;
-            box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
-            margin: 0px 5% 54px;
-            width: 87%;
-            padding: 50px 0;
-            display: table;
-
-            & div {
-                display: table-cell;
-                vertical-align: middle;
-                width: 50%;
-            }
-
-            .prof--tittle {
-                p {
-                    text-align: center;
-                    font-family: 'Raleway';
-                    font-weight: 700;
-                    font-size: 20px;
-                    line-height: 24px;
-                    color: #13253B;
-                }
-
-                .prof--pricing {
-                    font-family: 'Open Sans';
-                    font-style: normal;
-                    font-weight: 300;
-                    font-size: 46px;
-                    line-height: 64px;
-                    color: #07ACE6
-                }
-
-                .sub {
-                    @include sub;
-                }
-            }
-
-
-
-            @include tabla--precios;
-
-            .prof--boton {
-                @include boton-position;
-                background: #07ACE6;
+            .prof {
+                position: relative;
                 border: 1px solid #07ACE6;
+                border-radius: 18px;
+                box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+                margin: 0px 5% 54px;
+                width: 87%;
+                padding: 50px 0;
+                display: table;
 
-                p {
-                    @include text-boton;
+                & div {
+                    display: table-cell;
+                    vertical-align: middle;
+                    width: 50%;
+                }
+
+                .prof--tittle {
+                    p {
+                        text-align: center;
+                        font-family: 'Raleway';
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #13253B;
+                    }
+
+                    .prof--pricing {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 46px;
+                        line-height: 64px;
+                        color: #07ACE6
+                    }
+
+                    .sub {
+                        @include sub;
+                    }
+                }
+
+
+
+                @include tabla--precios;
+
+                .prof--boton {
+                    @include boton-position;
+                    background: #07ACE6;
+                    border: 1px solid #07ACE6;
+
+                    p {
+                        @include text-boton;
+                    }
                 }
             }
-        }
 
-        .premium {
-            position: relative;
-            border: 1px solid #55DFB4;
-            border-radius: 18px;
-            margin: 0 11% 54px;
-            display: table;
-            width: 75%;
-            padding: 25px 0;
-
-            & div {
-                display: table-cell;
-                vertical-align: middle;
-                width: 50%;
-            }
-
-            .premium--tittle {
-                p {
-                    text-align: center;
-                    font-family: 'Raleway';
-                    font-weight: 700;
-                    font-size: 20px;
-                    line-height: 24px;
-                    color: #13253B;
-                }
-
-                .premium--pricing {
-                    font-family: 'Open Sans';
-                    font-style: normal;
-                    font-weight: 300;
-                    font-size: 46px;
-                    line-height: 64px;
-                    color: #55DFB4;
-                }
-
-                .sub {
-                    @include sub;
-                }
-            }
-
-            @include tabla--precios;
-
-            .premium--boton {
-                @include boton-position;
-                background: #55DFB4;
+            .premium {
+                position: relative;
                 border: 1px solid #55DFB4;
+                border-radius: 18px;
+                margin: 0 11% 54px;
+                display: table;
+                width: 75%;
+                padding: 25px 0;
 
-                p {
-                    @include text-boton;
+                & div {
+                    display: table-cell;
+                    vertical-align: middle;
+                    width: 50%;
+                }
+
+                .premium--tittle {
+                    p {
+                        text-align: center;
+                        font-family: 'Raleway';
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #13253B;
+                    }
+
+                    .premium--pricing {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 46px;
+                        line-height: 64px;
+                        color: #55DFB4;
+                    }
+
+                    .sub {
+                        @include sub;
+                    }
+                }
+
+                @include tabla--precios;
+
+                .premium--boton {
+                    @include boton-position;
+                    background: #55DFB4;
+                    border: 1px solid #55DFB4;
+
+                    p {
+                        @include text-boton;
+                    }
                 }
             }
         }
@@ -962,38 +966,40 @@
 
 
     .pricing {
-        padding: 127.5px 180px;        
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 3fr;
-        align-items: center;
-        
-
-        h3 {
-            grid-column-start: 2;
-            grid-row-start: 1;
+        display: flex;
+        flex-direction: column;
+        margin-top: 127.5px;        
+        .pricing--table {
+            margin: 50px 132px 180px;
+            display: flex;
+            align-items: center;            
+            .basic, .prof, .premium {
+                margin: 0 25px;
+                display: flex;                
+                flex-direction: column;
+                align-items: center;                               
+            }
+            .prof {
+                .sub{
+                    margin-bottom: 61px;
+                }
+            }
+            .premium {
+                .sub {
+                    margin-bottom: 50px;
+                }
+            }
+            .basic {
+                .basic--pricing{
+                    margin-bottom: 69px;
+                }
+            }
+            .txt {
+                margin-bottom: 14px;
+            }          
             
-        }
-
-        .basic,
-        .prof,
-        .premium {
-            grid-row-start: 2;
-            display: grid;
-            justify-items: center;
-
-        }
-
-        .basic,
-        .premium {
-            max-width: 372px;
-            max-height: 461px;
-        }
-
-        .prof {
-            max-height: 500px;
-            max-width: 405px;
-        }
+        }           
+        
     }
 
     .formulario {
@@ -1008,6 +1014,13 @@
             display: flex;
             flex-direction: column;
             text-align: end;
+            .form--datos{
+                display: flex;
+                justify-content: end;
+                .datos--contacto{
+                    margin-left: 23px;
+                }
+            }
 
             h3 {
                 margin: 0;

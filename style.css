@@ -329,7 +329,7 @@
     line-height: 42px;
     margin-bottom: 14px;
   }
-  .pricing .basic {
+  .pricing .pricing--table .basic {
     position: relative;
     border: 1px solid #FB3B64;
     border-radius: 18px;
@@ -338,12 +338,12 @@
     padding: 25px 0;
     display: table;
   }
-  .pricing .basic div {
+  .pricing .pricing--table .basic div {
     display: table-cell;
     vertical-align: middle;
     width: 50%;
   }
-  .pricing .basic .basic--tittle p {
+  .pricing .pricing--table .basic .basic--tittle p {
     text-align: center;
     font-family: "Raleway";
     font-weight: 700;
@@ -351,7 +351,7 @@
     line-height: 24px;
     color: #13253B;
   }
-  .pricing .basic .basic--tittle .basic--pricing {
+  .pricing .pricing--table .basic .basic--tittle .basic--pricing {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 300;
@@ -359,10 +359,10 @@
     line-height: 64px;
     color: #FB3B64;
   }
-  .pricing .basic ul {
+  .pricing .pricing--table .basic ul {
     text-align: left;
   }
-  .pricing .basic ul li {
+  .pricing .pricing--table .basic ul li {
     list-style-type: none;
     font-family: "Open Sans";
     font-weight: 400;
@@ -370,11 +370,11 @@
     line-height: 19px;
     margin-bottom: 20px;
   }
-  .pricing .basic ul img {
+  .pricing .pricing--table .basic ul img {
     width: 14px;
     margin-right: 10px;
   }
-  .pricing .basic .basic--boton {
+  .pricing .pricing--table .basic .basic--boton {
     position: absolute;
     bottom: -25px;
     left: 25%;
@@ -385,7 +385,7 @@
     background: #EB476E;
     border: 1px solid #FB3B64;
   }
-  .pricing .basic .basic--boton p {
+  .pricing .pricing--table .basic .basic--boton p {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
@@ -393,7 +393,7 @@
     line-height: 18px;
     color: #FFFFFF;
   }
-  .pricing .prof {
+  .pricing .pricing--table .prof {
     position: relative;
     border: 1px solid #07ACE6;
     border-radius: 18px;
@@ -403,12 +403,12 @@
     padding: 50px 0;
     display: table;
   }
-  .pricing .prof div {
+  .pricing .pricing--table .prof div {
     display: table-cell;
     vertical-align: middle;
     width: 50%;
   }
-  .pricing .prof .prof--tittle p {
+  .pricing .pricing--table .prof .prof--tittle p {
     text-align: center;
     font-family: "Raleway";
     font-weight: 700;
@@ -416,7 +416,7 @@
     line-height: 24px;
     color: #13253B;
   }
-  .pricing .prof .prof--tittle .prof--pricing {
+  .pricing .pricing--table .prof .prof--tittle .prof--pricing {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 300;
@@ -424,7 +424,7 @@
     line-height: 64px;
     color: #07ACE6;
   }
-  .pricing .prof .prof--tittle .sub {
+  .pricing .pricing--table .prof .prof--tittle .sub {
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
@@ -432,10 +432,10 @@
     line-height: 14px;
     color: #13253B;
   }
-  .pricing .prof ul {
+  .pricing .pricing--table .prof ul {
     text-align: left;
   }
-  .pricing .prof ul li {
+  .pricing .pricing--table .prof ul li {
     list-style-type: none;
     font-family: "Open Sans";
     font-weight: 400;
@@ -443,11 +443,11 @@
     line-height: 19px;
     margin-bottom: 20px;
   }
-  .pricing .prof ul img {
+  .pricing .pricing--table .prof ul img {
     width: 14px;
     margin-right: 10px;
   }
-  .pricing .prof .prof--boton {
+  .pricing .pricing--table .prof .prof--boton {
     position: absolute;
     bottom: -25px;
     left: 25%;
@@ -458,7 +458,7 @@
     background: #07ACE6;
     border: 1px solid #07ACE6;
   }
-  .pricing .prof .prof--boton p {
+  .pricing .pricing--table .prof .prof--boton p {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
@@ -466,7 +466,7 @@
     line-height: 18px;
     color: #FFFFFF;
   }
-  .pricing .premium {
+  .pricing .pricing--table .premium {
     position: relative;
     border: 1px solid #55DFB4;
     border-radius: 18px;
@@ -475,12 +475,12 @@
     width: 75%;
     padding: 25px 0;
   }
-  .pricing .premium div {
+  .pricing .pricing--table .premium div {
     display: table-cell;
     vertical-align: middle;
     width: 50%;
   }
-  .pricing .premium .premium--tittle p {
+  .pricing .pricing--table .premium .premium--tittle p {
     text-align: center;
     font-family: "Raleway";
     font-weight: 700;
@@ -488,7 +488,7 @@
     line-height: 24px;
     color: #13253B;
   }
-  .pricing .premium .premium--tittle .premium--pricing {
+  .pricing .pricing--table .premium .premium--tittle .premium--pricing {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 300;
@@ -496,7 +496,7 @@
     line-height: 64px;
     color: #55DFB4;
   }
-  .pricing .premium .premium--tittle .sub {
+  .pricing .pricing--table .premium .premium--tittle .sub {
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
@@ -504,10 +504,10 @@
     line-height: 14px;
     color: #13253B;
   }
-  .pricing .premium ul {
+  .pricing .pricing--table .premium ul {
     text-align: left;
   }
-  .pricing .premium ul li {
+  .pricing .pricing--table .premium ul li {
     list-style-type: none;
     font-family: "Open Sans";
     font-weight: 400;
@@ -515,11 +515,11 @@
     line-height: 19px;
     margin-bottom: 20px;
   }
-  .pricing .premium ul img {
+  .pricing .pricing--table .premium ul img {
     width: 14px;
     margin-right: 10px;
   }
-  .pricing .premium .premium--boton {
+  .pricing .pricing--table .premium .premium--boton {
     position: absolute;
     bottom: -25px;
     left: 25%;
@@ -530,7 +530,7 @@
     background: #55DFB4;
     border: 1px solid #55DFB4;
   }
-  .pricing .premium .premium--boton p {
+  .pricing .pricing--table .premium .premium--boton p {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
@@ -825,31 +825,32 @@
     top: 75px;
   }
   .pricing {
-    padding: 127.5px 180px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
+    display: flex;
+    flex-direction: column;
+    margin-top: 127.5px;
+  }
+  .pricing .pricing--table {
+    margin: 50px 132px 180px;
+    display: flex;
     align-items: center;
   }
-  .pricing h3 {
-    grid-column-start: 2;
-    grid-row-start: 1;
+  .pricing .pricing--table .basic, .pricing .pricing--table .prof, .pricing .pricing--table .premium {
+    margin: 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .pricing .basic,
-  .pricing .prof,
-  .pricing .premium {
-    grid-row-start: 2;
-    display: grid;
-    justify-items: center;
+  .pricing .pricing--table .prof .sub {
+    margin-bottom: 61px;
   }
-  .pricing .basic,
-  .pricing .premium {
-    max-width: 372px;
-    max-height: 461px;
+  .pricing .pricing--table .premium .sub {
+    margin-bottom: 50px;
   }
-  .pricing .prof {
-    max-height: 500px;
-    max-width: 405px;
+  .pricing .pricing--table .basic .basic--pricing {
+    margin-bottom: 69px;
+  }
+  .pricing .pricing--table .txt {
+    margin-bottom: 14px;
   }
   .formulario {
     margin: 0;
@@ -863,6 +864,13 @@
     display: flex;
     flex-direction: column;
     text-align: end;
+  }
+  .formulario .form--text .form--datos {
+    display: flex;
+    justify-content: end;
+  }
+  .formulario .form--text .form--datos .datos--contacto {
+    margin-left: 23px;
   }
   .formulario .form--text h3 {
     margin: 0;
