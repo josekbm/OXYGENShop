@@ -875,8 +875,10 @@
 
             & p {
                 grid-column: 1;
-                margin: 30px 0px 50px;
+                margin: 30px 0px 50px;                
                 width: 70%;
+                border-bottom: 4px solid #EB476E;
+                padding-bottom: 50px;
             }
         }
 
@@ -923,6 +925,8 @@
                 grid-column: 2;
                 margin: 30px 0px 50px;
                 width: 80%;
+                border-bottom: 4px solid #07ACE6;
+                padding-bottom: 50px;
             }
         }
         .art3 {
@@ -945,6 +949,8 @@
                 & p{
                     margin: 0px;
                     width: 80%;
+                    border-bottom: 4px solid #55DFB4;
+                    padding-bottom: 50px;
                 }
             }
             .art3--trompeta{
