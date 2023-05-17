@@ -5,22 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://oxygenworkspace.com/wp-content/uploads/2020/12/cropped-OXY-32x32.jpg" sizes="32x32">
+    <link rel="stylesheet" href="css/style.css">
     <title>OXYGENShop</title>
 </head>
 <header>
     <div class="menu">
         <nav>
-            <h1 class="menu--logo">OXYGENShop</h1>
+            <a href="index.html"><h1 class="menu--logo">OXYGENShop</h1></a>
 
             <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="">
             <label for="abrir-cerrar" class="boton"></label>
 
             <ul class="menu--lista">
-                <li class="lista--item"><a href="#">WHY US</a></li>
-                <li class="lista--item"><a href="#">BENEFITS</a></li>
-                <li class="lista--item"><a href="#">PRICES</a></li>
-                <li class="lista--item"><a href="#">CONTACT</a></li>
+                <li class="lista--item"><a href="#fondo">WHY US</a></li>
+                <li class="lista--item"><a href="#articulos">BENEFITS</a></li>
+                <li class="lista--item"><a href="#pricing">PRICES</a></li>
+                <li class="lista--item"><a href="#form">CONTACT</a></li>
             </ul>
         </nav>
     </div>
@@ -36,12 +37,12 @@
                     <p>Open your shop</p>
                 </button>
             </div>
-            <div class="fondo">
+            <div class="fondo" id="fondo">
                 <div class="fondo--imagen"></div>
                 <p>The most popular sales platform in country</p>
             </div>
 
-            <div class="estadistica">
+            <div class="estadistica" id="estad">
                 <div class="vector">
                     <img src="images/Persona.png" class="persona" alt="persona">
                     <img src="images/Ellipse roja.png" alt="cir_rojo">
@@ -63,7 +64,7 @@
                 </div>
             </div>
         </article>
-        <article class="articulos">
+        <article class="articulos" id="articulos">
             <div class="art1">
                 <img src="images/Macbook2 movil.png" alt="ordenador">
                 <img src="images/Rectangle 5 movil.png" alt="rombo_rojo">
@@ -94,7 +95,7 @@
             </div>
         </div>           
         </article>
-        <article class="pricing">
+        <article class="pricing" id="pricing">
             <h3>Pricing</h3>
             <div class="pricing--table">
                 <div class="basic">
@@ -150,7 +151,7 @@
             </div>
         </article>
         <aside>
-            <form action="#" method="post" class="formulario">
+            <form action="#" method="post" class="formulario" id="form">
                 <div class="form--text">
                     <h3>Any questions?</h3>
                     <p class="form--sub">Leave your email address or call us!</p>
@@ -165,12 +166,12 @@
                     <label for="EMAIL">EMAIL</label><br>
                     <input type="text" id="email" name="EMAIL" size="30%" required><br>
                     <div class="protec--datos">
-                        <input type="checkbox" name="aceptar" class="aceptar">
+                        <input type="checkbox" name="aceptar" class="aceptar" required>
                         <p>
                             I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
                         </p>
                     </div>
-                    <input type="submit" value="Send" class="enviar">
+                    <a href="index.html"><input type="button" value="Send" class="enviar"></a>
                 </div>
             </form>
         </aside>
@@ -179,9 +180,9 @@
     <footer class="pie">
         <h1>OXYGENShop</h1>
         <p>&copy; 2023 OXYGEN, All Rights Reserved</p>
-        <div class="redes">
-            <img src="images/Logo twitter.png" alt="logo twitter">
-            <img src="images/Logo Facebook.png" alt="logo facebook">
+        <adiv class="redes">
+            <a href="https://twitter.com" target="_blank"><img src="images/Logo twitter.png" alt="logo twitter"></a>
+            <a href="https://facebook.com" target="_blank"><img src="images/Logo Facebook.png" alt="logo facebook"></a>
         </div>
     </footer>
 </body>

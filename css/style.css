@@ -30,6 +30,9 @@
     padding-top: 17px;
     background-color: #fff;
   }
+  .menu nav a {
+    text-decoration: none;
+  }
   .menu .menu--logo {
     font-family: "Raleway";
     font-size: 32px;
@@ -149,7 +152,7 @@
     height: 267px;
     margin-top: 51px;
     width: 100%;
-    background-image: url("images/Fondo_desktop.png");
+    background-image: url("/images/Fondo_desktop.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -329,6 +332,24 @@
     line-height: 42px;
     margin-bottom: 14px;
   }
+  .pricing .pricing--table .basic:hover {
+    box-shadow: 5px 10px 27px rgba(251, 59, 100, 0.9);
+    transform: scale(1.15);
+    transition: transform 0.3s ease-in-out;
+    border-width: 2px;
+  }
+  .pricing .pricing--table .premium:hover {
+    box-shadow: 5px 10px 27px rgba(85, 223, 180, 0.9);
+    transform: scale(1.15);
+    transition: transform 0.3s ease-in-out;
+    border-width: 2px;
+  }
+  .pricing .pricing--table .prof:hover {
+    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.9);
+    transform: scale(1.15);
+    transition: transform 0.3s ease-in-out;
+    border-width: 2px;
+  }
   .pricing .pricing--table .basic {
     position: relative;
     border: 1px solid #FB3B64;
@@ -397,10 +418,9 @@
     position: relative;
     border: 1px solid #07ACE6;
     border-radius: 18px;
-    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
-    margin: 0px 5% 54px;
-    width: 87%;
-    padding: 50px 0;
+    margin: 0px 11% 54px;
+    width: 75%;
+    padding: 25px 0;
     display: table;
   }
   .pricing .pricing--table .prof div {
@@ -470,10 +490,10 @@
     position: relative;
     border: 1px solid #55DFB4;
     border-radius: 18px;
-    margin: 0 11% 54px;
-    display: table;
+    margin: 0px 11% 54px;
     width: 75%;
     padding: 25px 0;
+    display: table;
   }
   .pricing .pricing--table .premium div {
     display: table-cell;
@@ -584,6 +604,10 @@
     border: none;
     border-bottom: 1px solid #95989A;
     margin: 42px 0;
+    font-size: 1rem;
+  }
+  .formulario .form--fields input:focus {
+    outline: none;
   }
   .formulario .form--fields .protec--datos {
     display: table;
@@ -850,10 +874,10 @@
     margin-bottom: 61px;
   }
   .pricing .pricing--table .premium .sub {
-    margin-bottom: 50px;
+    margin-bottom: 61px;
   }
   .pricing .pricing--table .basic .basic--pricing {
-    margin-bottom: 69px;
+    margin-bottom: 75px;
   }
   .pricing .pricing--table .txt {
     margin-bottom: 14px;
