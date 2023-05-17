@@ -148,7 +148,7 @@
     font-weight: 700;
     text-align: center;
   }
-  #fondo .fondo--imagen {
+  .fondo .fondo--imagen {
     height: 267px;
     margin-top: 51px;
     width: 100%;
@@ -157,7 +157,7 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-  #fondo p {
+  .fondo p {
     font-family: "Raleway", sans-serif;
     font-weight: 300;
     font-size: 30px;
