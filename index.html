@@ -10,12 +10,8 @@
     <title>OXYGENShop</title>
 </head>
 <header>
-    <div class="menu">
-        <nav>
-            <a href="index.html"><h1 class="menu--logo">OXYGENShop</h1></a>
-
-            <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="">
-            <label for="abrir-cerrar" class="boton"></label>
+    <nav class="navbar">
+            <a href="index.html"><h1 class="menu--logo">OXYGENShop</h1></a>  
 
             <ul class="menu--lista">
                 <li class="lista--item"><a href="#fondo">WHY US</a></li>
@@ -23,12 +19,17 @@
                 <li class="lista--item"><a href="#pricing">PRICES</a></li>
                 <li class="lista--item"><a href="#form">CONTACT</a></li>
             </ul>
-        </nav>
-    </div>
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+    </nav>    
 </header>
 
 <body>
-    <main>
+    <div id="scroll-progress"></div>  
+    <main>         
         <article>
             <div class="principal">
                 <h2>Sell More!</h2>
@@ -186,5 +187,5 @@
         </div>
     </footer>
 </body>
-
+<script src="app.js"></script>
 </html>
