@@ -151,8 +151,8 @@
                 </div>
             </div>
         </article>
-        <aside>
-            <form action="#" method="post" class="formulario" id="form">
+        <aside class="form" id="form">
+            <form action="index.html" method="post" id="myform">
                 <div class="form--text">
                     <h3>Any questions?</h3>
                     <p class="form--sub">Leave your email address or call us!</p>
@@ -163,21 +163,42 @@
                 </div>
                 <div class="form--fields">           
                     <label for="NAME">NAME</label><br>
-                    <input type="text" id="name" name="NAME" size="30%" required><br>
+                        <input type="text" id="name" name="NAME" size="30%" class="name"><br>
                     <label for="EMAIL">EMAIL</label><br>
-                    <input type="text" id="email" name="EMAIL" size="30%" required><br>
+                        <input type="text" id="email" name="EMAIL" size="30%" class="email"><br>
                     <div class="protec--datos">
-                        <input type="checkbox" name="aceptar" class="aceptar" required>
-                        <p>
-                            I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
+                        <input type="checkbox" id="consentimiento" name="aceptar" class="aceptar" >
+                        <p class="terminos">
+                            I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)                            
                         </p>
                     </div>
-                    <a href="index.html"><input type="button" value="Send" class="enviar"></a>
+                    <button type="submit" id="enviar">Send</button>
                 </div>
             </form>
+            <div id="gracias">
+                <p>Thank you! Your form was submitted successfully, we'll reach you ASAP.</p>
+            </div>
         </aside>
+        <!--Popup Modal-->
+        <section class="modal hidden">
+            <div class="flex">
+              <img src="images/newsletterIcon.png" width="50px" height="50px" alt="user" />
+              <button class="btn-close">⨉</button>
+            </div>
+            <div>
+              <h3>Stay in touch, subscribe to our newsletter!</h3>
+              <p>
+                Be ready to stay inform of our new offers and promotions ;)
+              </p>
+            </div>
+          
+            <input type="email" id="email" placeholder="example@example.com" />
+            <button class="btn">Submit</button>
+        </section>
+          
+          <div class="overlay hidden"></div>
+          
     </main>
-
     <footer class="pie">
         <h1>OXYGENShop</h1>
         <p>&copy; 2023 OXYGEN, All Rights Reserved</p>
@@ -186,6 +207,8 @@
             <a href="https://facebook.com" target="_blank"><img src="images/Logo Facebook.png" alt="logo facebook"></a>
         </div>
     </footer>
+    <button id="return-top">&#8593;</button>
 </body>
 <script src="app.js"></script>
+<script src="modalpopup.js"></script>
 </html>

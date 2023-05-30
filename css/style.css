@@ -8,6 +8,7 @@
 
 body {
   min-width: 320px;
+  position: relative;
 }
 
 #scroll-progress {
@@ -16,7 +17,7 @@ body {
   width: 0%;
   height: 4px;
   background: #08A6E4;
-  z-index: 10000;
+  z-index: 200;
 }
 
 header {
@@ -545,11 +546,11 @@ header .navbar .hamburger.active .bar:nth-child(3) {
   color: #FFFFFF;
 }
 
-.formulario {
+#myform {
   position: relative;
   margin-left: 8%;
 }
-.formulario .form--text h3 {
+#myform .form--text h3 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -557,7 +558,7 @@ header .navbar .hamburger.active .bar:nth-child(3) {
   line-height: 47px;
   margin: 50px 0 5px;
 }
-.formulario .form--text .form--sub {
+#myform .form--text .form--sub {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -565,7 +566,7 @@ header .navbar .hamburger.active .bar:nth-child(3) {
   line-height: 22px;
   margin-bottom: 38px;
 }
-.formulario .form--text .datos--contacto {
+#myform .form--text .datos--contacto {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
@@ -574,10 +575,10 @@ header .navbar .hamburger.active .bar:nth-child(3) {
   color: #A5A5A5;
   margin-bottom: 17px;
 }
-.formulario .form--text .datos--contacto img {
+#myform .form--text .datos--contacto img {
   margin-right: 11px;
 }
-.formulario .form--fields label {
+#myform .form--fields label {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
@@ -587,26 +588,26 @@ header .navbar .hamburger.active .bar:nth-child(3) {
   color: #08A6E4;
   margin-bottom: 42px;
 }
-.formulario .form--fields input {
+#myform .form--fields input {
   border: none;
   border-bottom: 1px solid #95989A;
   margin: 42px 0;
   font-size: 1rem;
 }
-.formulario .form--fields input:focus {
+#myform .form--fields input:focus {
   outline: none;
 }
-.formulario .form--fields .protec--datos {
+#myform .form--fields .protec--datos {
   display: table;
   position: relative;
   width: 85%;
 }
-.formulario .form--fields .protec--datos .aceptar {
+#myform .form--fields .protec--datos .aceptar {
   display: table-cell;
   vertical-align: middle;
   margin-right: 10px;
 }
-.formulario .form--fields .protec--datos p {
+#myform .form--fields .protec--datos p {
   display: table-cell;
   vertical-align: middle;
   height: 144px;
@@ -618,7 +619,7 @@ header .navbar .hamburger.active .bar:nth-child(3) {
   color: #707070;
   width: 95%;
 }
-.formulario .form--fields .enviar {
+#myform .form--fields #enviar {
   height: 57px;
   width: 60%;
   background: #08A6E4;
@@ -633,6 +634,101 @@ header .navbar .hamburger.active .bar:nth-child(3) {
   border-radius: 35px;
   margin: 33px 0px 0px 31%;
   cursor: pointer;
+}
+
+#gracias {
+  display: none;
+  text-align: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 47px;
+  color: #08A6E4;
+}
+
+.modal {
+  font-family: "Raleway";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 450px;
+  padding: 1.3rem;
+  min-height: 250px;
+  position: fixed;
+  top: 20%;
+  left: 37%;
+  color: #08A6E4;
+  background-color: white;
+  border: 2px solid #08A6E4;
+  border-radius: 15px;
+  z-index: 1001;
+}
+.modal .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+.modal p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0.4rem 0 0.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  font-weight: 700;
+  background-color: #08A6E4;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.btn-open {
+  position: absolute;
+  bottom: 150px;
+}
+
+.btn-close {
+  transform: translate(10px, -20px);
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #08A6E4;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #08A6E4;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  z-index: 1000;
 }
 
 footer {
@@ -671,6 +767,28 @@ footer .redes {
 footer .redes img {
   margin: 0 5px 0;
   cursor: pointer;
+}
+
+#return-top {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 75px;
+  right: 20px;
+  z-index: 7;
+  background-color: transparent;
+  color: #08A6E4;
+  font-size: 20px;
+  border-color: #08A6E4;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#return-top:hover {
+  background-color: transparent;
+  transform: scale(1.3);
+  transition: transform 0.3s ease-in-out;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -875,38 +993,95 @@ footer .redes img {
   .pricing .pricing--table .txt {
     margin-bottom: 14px;
   }
-  .formulario {
+  #myform {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: start;
   }
-  .formulario .form--text {
+  #myform .form--text {
     margin-right: 113px;
     display: flex;
     flex-direction: column;
     text-align: end;
   }
-  .formulario .form--text .form--datos {
+  #myform .form--text .form--datos {
     display: flex;
     justify-content: end;
   }
-  .formulario .form--text .form--datos .datos--contacto {
+  #myform .form--text .form--datos .datos--contacto {
     margin-left: 23px;
   }
-  .formulario .form--text h3 {
+  #myform .form--text h3 {
     margin: 0;
   }
-  .formulario .form--fields {
+  #myform .form--fields {
     width: 440px;
   }
-  .formulario .form--fields #name,
-  .formulario .form--fields #email {
+  #myform .form--fields #name,
+  #myform .form--fields #email {
     width: 80%;
   }
-  .formulario .form--fields .enviar {
+  #myform .form--fields .enviar {
     max-width: 226px;
     max-height: 57px;
+  }
+  #modalpopup #modalpopup-text {
+    font-size: 2.5rem;
+  }
+  #modalpopup label {
+    font-size: 1.5rem;
+  }
+  #modalpopup .field {
+    margin-bottom: 10px;
+    display: flex;
+    margin: 20px 0;
+  }
+  #modalpopup .field .mailbox {
+    position: absolute;
+    max-height: 140px;
+    max-width: 140px;
+    left: 85%;
+    top: 20%;
+    scale: auto;
+  }
+  #modalpopup .field #email-input {
+    position: relative;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #08A6E4;
+  }
+  #modalpopup #close-btn {
+    position: relative;
+    align-self: flex-end;
+    border: none;
+    background-color: transparent;
+    right: 2%;
+    top: 10%;
+  }
+  #modalpopup #close-btn :nth-child(2) {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #modalpopup #subscribe-btn {
+    position: absolute;
+    bottom: -25px;
+    left: 25%;
+    width: 50%;
+    height: 50px;
+    border-radius: 23px;
+    cursor: pointer;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+    background: #08A6E4;
+    border: 1px solid #08A6E4;
   }
 }/*# sourceMappingURL=style.css.map */

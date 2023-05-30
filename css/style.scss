@@ -78,6 +78,7 @@
 
 body {
     min-width: 320px;
+    position: relative;
 
 }
 #scroll-progress {
@@ -86,7 +87,7 @@ body {
     width: 0%;
     height: 4px;
     background: #08A6E4;
-    z-index: 10000;
+    z-index: 200;
   }
 
 header {
@@ -627,7 +628,7 @@ header {
 
 
 
-.formulario {
+#myform {
     position: relative;
     margin-left: 8%;
 
@@ -683,7 +684,7 @@ header {
         input:focus{
             outline: none;
         }
-
+        
         .protec--datos {
             display: table;
             position: relative;
@@ -709,7 +710,7 @@ header {
             }
         }
 
-        .enviar {
+        #enviar {
             height: 57px;
             width: 60%;
             background: #08A6E4;
@@ -728,6 +729,99 @@ header {
     }
 
 }
+#gracias{
+    display: none;
+    text-align: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 47px;
+    color: #08A6E4;
+    
+}
+
+.modal {
+    font-family: "Raleway";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 450px;
+    padding: 1.3rem;
+    min-height: 250px;
+    position: fixed;
+    top: 20%;
+    left: 37%;
+    color: #08A6E4;
+    background-color: white;
+    border: 2px solid #08A6E4;
+    border-radius: 15px;
+    z-index: 1001;
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    input {
+        padding: 0.7rem 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 0.9em;
+    }
+    p {
+        font-size: 0.9rem;
+        color: #777;
+        margin: 0.4rem 0 0.2rem;
+    }
+ }
+.hidden {
+    display: none;
+} 
+  
+button {
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+  
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.4rem;
+    font-weight: 700;
+    background-color: #08A6E4;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+}
+  
+.btn-open {
+    position: absolute;
+    bottom: 150px;
+}
+  
+.btn-close {
+    transform: translate(10px, -20px);
+    padding: 0.5rem 0.7rem;
+    border: 1px solid #08A6E4;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #08A6E4;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1000;
+}
+
 
 footer {
     position: relative;
@@ -770,6 +864,28 @@ footer {
         }
     }
 }
+
+#return-top {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 75px;
+    right: 20px;
+    z-index: 7;
+    background-color: transparent;
+    color: #08A6E4;
+    font-size: 20px;
+    border-color: #08A6E4;
+    cursor: pointer;
+    border-radius: 50%;
+}
+    #return-top:hover {
+        background-color: transparent;
+        transform: scale(1.30);
+        transition: transform 0.3s ease-in-out;
+    }
+
 
 
 @media only screen and (min-width: 1000px) {
@@ -1024,7 +1140,7 @@ footer {
         
     }
 
-    .formulario {
+    #myform {
         margin: 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1063,6 +1179,60 @@ footer {
                 max-height: 57px;
 
             }
+        }
+    }
+
+    #modalpopup {          
+
+        #modalpopup-text {        
+            font-size: 2.5rem;        
+        }
+
+        label {               
+            font-size: 1.5rem;
+        }
+        .field {
+            margin-bottom: 10px;       
+            display: flex;
+            margin: 20px 0;
+            .mailbox {
+                position: absolute;
+                max-height: 140px;
+                max-width: 140px;
+                left: 85%;
+                top: 20%;
+                scale: auto;
+            }
+            #email-input {
+                position:relative;
+                margin-left: 10px;
+                border: none;
+                outline: none;
+                border-bottom: 2px solid #08A6E4;
+            
+            }             
+        
+        
+        }
+        
+    
+        #close-btn {            
+            position: relative;
+            align-self: flex-end;             
+            border: none;
+            background-color: transparent;
+            right: 2%;
+            top: 10%;
+            :nth-child(2) {
+                width: fit-content;
+                height: fit-content;
+            }    
+        }
+        #subscribe-btn {        
+            @include boton-position;
+            @include text-boton;
+            background: #08A6E4;
+            border: 1px solid #08A6E4;
         }
     }
 
