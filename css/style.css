@@ -136,7 +136,7 @@ header .navbar .hamburger.active .bar:nth-child(3) {
   height: 267px;
   margin-top: 51px;
   width: 100%;
-  background-image: url("/images/Fondo_desktop.png");
+  background-image: url("../images/Fondo_pc.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
