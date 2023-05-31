@@ -545,6 +545,93 @@ header .navbar .hamburger.active .bar:nth-child(3) {
   line-height: 18px;
   color: #FFFFFF;
 }
+.pricing .pricing_eur {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 4%;
+}
+.pricing #usd {
+  cursor: pointer;
+  width: 30px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #08A6E4;
+}
+.pricing #eur {
+  cursor: pointer;
+  width: 30px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #55DFB4;
+}
+.pricing #gbp {
+  cursor: pointer;
+  width: 30px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #EB476E;
+}
+
+#slider {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  gap: 40px;
+  transition: left 400ms linear;
+}
+
+#slider img {
+  width: 80%;
+  max-width: 1200px;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.7);
+  transition: all 1000ms ease-in-out;
+}
+
+#slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  border-color: #08A6E4;
+  color: #08A6E4;
+  cursor: pointer;
+  font-family: "Raleway";
+  transition: all 1000ms ease-in-out;
+}
+
+.prev-btn {
+  left: 40px;
+}
+
+.next-btn {
+  right: 40px;
+}
+
+.points-container {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.points {
+  width: 10px;
+  height: 10px;
+  background-color: #999999;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.points.active {
+  background-color: #08A6E4;
+}
 
 #myform {
   position: relative;
@@ -653,12 +740,12 @@ header .navbar .hamburger.active .bar:nth-child(3) {
   flex-direction: column;
   justify-content: center;
   gap: 0.4rem;
-  width: 450px;
+  max-width: 450px;
   padding: 1.3rem;
   min-height: 250px;
   position: fixed;
   top: 20%;
-  left: 37%;
+  left: 5.5%;
   color: #08A6E4;
   background-color: white;
   border: 2px solid #08A6E4;
@@ -681,15 +768,14 @@ header .navbar .hamburger.active .bar:nth-child(3) {
   color: #777;
   margin: 0.4rem 0 0.2rem;
 }
-
-.hidden {
-  display: none;
-}
-
-button {
+.modal button {
   cursor: pointer;
   border: none;
   font-weight: 600;
+}
+
+.hidden {
+  display: none;
 }
 
 .btn {
@@ -993,6 +1079,28 @@ footer .redes img {
   .pricing .pricing--table .txt {
     margin-bottom: 14px;
   }
+  #slider img {
+    width: 50%;
+    max-width: 1200px;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.7);
+  }
+  .prev-btn {
+    left: 325px;
+  }
+  .next-btn {
+    right: 325px;
+  }
+  .points {
+    width: 10px;
+    height: 10px;
+    background-color: #999999;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .points.active {
+    background-color: #08A6E4;
+  }
   #myform {
     margin: 0;
     display: grid;
@@ -1027,61 +1135,7 @@ footer .redes img {
     max-width: 226px;
     max-height: 57px;
   }
-  #modalpopup #modalpopup-text {
-    font-size: 2.5rem;
-  }
-  #modalpopup label {
-    font-size: 1.5rem;
-  }
-  #modalpopup .field {
-    margin-bottom: 10px;
-    display: flex;
-    margin: 20px 0;
-  }
-  #modalpopup .field .mailbox {
-    position: absolute;
-    max-height: 140px;
-    max-width: 140px;
-    left: 85%;
-    top: 20%;
-    scale: auto;
-  }
-  #modalpopup .field #email-input {
-    position: relative;
-    margin-left: 10px;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid #08A6E4;
-  }
-  #modalpopup #close-btn {
-    position: relative;
-    align-self: flex-end;
-    border: none;
-    background-color: transparent;
-    right: 2%;
-    top: 10%;
-  }
-  #modalpopup #close-btn :nth-child(2) {
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  #modalpopup #subscribe-btn {
-    position: absolute;
-    bottom: -25px;
-    left: 25%;
-    width: 50%;
-    height: 50px;
-    border-radius: 23px;
-    cursor: pointer;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 18px;
-    color: #FFFFFF;
-    background: #08A6E4;
-    border: 1px solid #08A6E4;
+  .modal {
+    left: 37%;
   }
 }/*# sourceMappingURL=style.css.map */

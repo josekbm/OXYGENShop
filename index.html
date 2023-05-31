@@ -98,6 +98,11 @@
         </article>
         <article class="pricing" id="pricing">
             <h3>Pricing</h3>
+            <div class="pricing_eur">
+                <button id="usd" class="heartbeat">$</button>
+                <button id="eur" class="heartbeat">€</button>
+                <button id="gbp" class="heartbeat">£</button>
+            </div>
             <div class="pricing--table">
                 <div class="basic">
                     <div class="basic--tittle">
@@ -151,6 +156,19 @@
                 </div>
             </div>
         </article>
+        <!--Slider-->
+        <div id="slider">
+            <img src="images/image1.jpg" alt="Image 1">
+            <img src="images/image2.jpg" alt="Image 2">
+            <img src="images/image3.jpg" alt="Image 3">
+            <button class="prev-btn">← Prev</button>
+            <button class="next-btn">Next →</button>
+            <div class="points-container">
+                <span class="points"></span>
+                <span class="points"></span>
+                <span class="points"></span>
+            </div>
+        </div>
         <aside class="form" id="form">
             <form action="index.html" method="post" id="myform">
                 <div class="form--text">
@@ -189,11 +207,12 @@
               <h3>Stay in touch, subscribe to our newsletter!</h3>
               <p>
                 Be ready to stay inform of our new offers and promotions ;)
-              </p>
+              </p>              
             </div>
           
-            <input type="email" id="email" placeholder="example@example.com" />
-            <button class="btn">Submit</button>
+            <input type="email" id="emailpop" placeholder="example@example.com" />
+            <button type="submit" class="btn" id="submitpop">Send</button>
+            
         </section>
           
           <div class="overlay hidden"></div>
@@ -209,6 +228,8 @@
     </footer>
     <button id="return-top">&#8593;</button>
 </body>
-<script src="app.js"></script>
-<script src="modalpopup.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/modalpopup.js"></script>
+<script src="scripts/divisas.js"></script>
+<script src="scripts/slider.js"></script>
 </html>
