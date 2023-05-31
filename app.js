@@ -57,22 +57,30 @@ document.addEventListener("DOMContentLoaded", function() {
     let isValid = true;
       if(name.length < 2 || name.length > 100) {
         document.querySelector("#name").style.border = "thick solid red";
-        alert("Name must have at least two characters");
+        document.querySelector(".namewar").innerHTML = "Name must have at least two characters.";
         isValid = false;
         console.log("Name incorrect");
+      }else{
+        document.querySelector(".namewar").innerHTML = " ";
+        document.querySelector("#name").style.border = "none";
       }
 
       const emailRegex = /^[\w.%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
         if (!emailRegex.test(email)) {
           document.querySelector("#email").style.border = "thick solid red"
-          alert("Email must be a valid direction");
+          document.querySelector(".emailwar").innerHTML = "Email must be a valid direction.";
           isValid = false;
           console.log("Email incorrect");
+        }else{
+          document.querySelector(".emailwar").innerHTML = " ";
+          document.querySelector("#email").style.border = "none";
         }
       if(!checkbox) {        
         isValid = false;
-        alert("You must acept Personal Data Policy");
+        document.querySelector(".checkwar").innerHTML = "You must acept Personal Data Policy.";
         console.log("checkbox unchecked");
+      }else{
+        document.querySelector(".checkwar").innerHTML = " ";
       }
     
     //Envío de datos:

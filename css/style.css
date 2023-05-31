@@ -722,6 +722,19 @@ header .navbar .hamburger.active .bar:nth-child(3) {
   margin: 33px 0px 0px 31%;
   cursor: pointer;
 }
+#myform .emailwar, #myform .namewar {
+  position: relative;
+  bottom: 40px;
+  font-family: "Raleway";
+  color: #EB476E;
+}
+#myform .checkwar {
+  position: relative;
+  bottom: 5px;
+  left: 50px;
+  font-family: "Raleway";
+  color: #EB476E;
+}
 
 #gracias {
   display: none;

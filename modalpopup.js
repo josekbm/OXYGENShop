@@ -1,4 +1,4 @@
-let modalClosed = sessionStorage.setItem('modalClosed', true) === true;
+let modalClosed = localStorage.setItem('modalClosed', true) === true;
 let isModalShown = false;
 
 const modal = document.querySelector(".modal");
@@ -65,7 +65,11 @@ submitPop.addEventListener("click", function(event) {
 
 const sendDataToServer = async (data) => {
     try {
-    const response = await fetch("https://jsonplaceholder.typicode.com/posts", {method: "POST", headers: {'Content-type': 'application/json; charset=UTF-8',}, body: JSON.stringify(data)});
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+        method: "POST", 
+        headers: {'Content-type': 'application/json; charset=UTF-8',}, 
+        body: JSON.stringify(data)
+    });
     if(response.ok) {
         const json = await response.json();
         console.log(json);     

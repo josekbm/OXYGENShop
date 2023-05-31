@@ -822,6 +822,19 @@ header {
             cursor: pointer;
         }
     }
+    .emailwar, .namewar {
+        position: relative;
+        bottom: 40px;
+        font-family: "Raleway";
+        color: #EB476E;        
+    }
+    .checkwar {
+        position: relative;
+        bottom: 5px;
+        left: 50px;
+        font-family: "Raleway";
+        color: #EB476E;
+    }
 
 }
 #gracias{
