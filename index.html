@@ -10,12 +10,8 @@
     <title>OXYGENShop</title>
 </head>
 <header>
-    <div class="menu">
-        <nav>
-            <a href="index.html"><h1 class="menu--logo">OXYGENShop</h1></a>
-
-            <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="">
-            <label for="abrir-cerrar" class="boton"></label>
+    <nav class="navbar">
+            <a href="index.html"><h1 class="menu--logo">OXYGENShop</h1></a>  
 
             <ul class="menu--lista">
                 <li class="lista--item"><a href="#fondo">WHY US</a></li>
@@ -23,12 +19,17 @@
                 <li class="lista--item"><a href="#pricing">PRICES</a></li>
                 <li class="lista--item"><a href="#form">CONTACT</a></li>
             </ul>
-        </nav>
-    </div>
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+    </nav>    
 </header>
 
 <body>
-    <main>
+    <div id="scroll-progress"></div>  
+    <main>         
         <article>
             <div class="principal">
                 <h2>Sell More!</h2>
@@ -97,6 +98,11 @@
         </article>
         <article class="pricing" id="pricing">
             <h3>Pricing</h3>
+            <div class="pricing_eur">
+                <button id="usd" class="heartbeat">$</button>
+                <button id="eur" class="heartbeat">€</button>
+                <button id="gbp" class="heartbeat">£</button>
+            </div>
             <div class="pricing--table">
                 <div class="basic">
                     <div class="basic--tittle">
@@ -150,8 +156,21 @@
                 </div>
             </div>
         </article>
-        <aside>
-            <form action="#" method="post" class="formulario" id="form">
+        <!--Slider-->
+        <div id="slider">
+            <img src="images/image1.jpg" alt="Image 1">
+            <img src="images/image2.jpg" alt="Image 2">
+            <img src="images/image3.jpg" alt="Image 3">
+            <button class="prev-btn">← Prev</button>
+            <button class="next-btn">Next →</button>
+            <div class="points-container">
+                <span class="points"></span>
+                <span class="points"></span>
+                <span class="points"></span>
+            </div>
+        </div>
+        <aside class="form" id="form">
+            <form action="index.html" method="post" id="myform">
                 <div class="form--text">
                     <h3>Any questions?</h3>
                     <p class="form--sub">Leave your email address or call us!</p>
@@ -162,21 +181,43 @@
                 </div>
                 <div class="form--fields">           
                     <label for="NAME">NAME</label><br>
-                    <input type="text" id="name" name="NAME" size="30%" required><br>
+                        <input type="text" id="name" name="NAME" size="30%" class="name"><br>
                     <label for="EMAIL">EMAIL</label><br>
-                    <input type="text" id="email" name="EMAIL" size="30%" required><br>
+                        <input type="text" id="email" name="EMAIL" size="30%" class="email"><br>
                     <div class="protec--datos">
-                        <input type="checkbox" name="aceptar" class="aceptar" required>
-                        <p>
-                            I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
+                        <input type="checkbox" id="consentimiento" name="aceptar" class="aceptar" >
+                        <p class="terminos">
+                            I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)                            
                         </p>
                     </div>
-                    <a href="index.html"><input type="button" value="Send" class="enviar"></a>
+                    <button type="submit" id="enviar">Send</button>
                 </div>
             </form>
+            <div id="gracias">
+                <p>Thank you! Your form was submitted successfully, we'll reach you ASAP.</p>
+            </div>
         </aside>
+        <!--Popup Modal-->
+        <section class="modal hidden">
+            <div class="flex">
+              <img src="images/newsletterIcon.png" width="50px" height="50px" alt="user" />
+              <button class="btn-close">⨉</button>
+            </div>
+            <div>
+              <h3>Stay in touch, subscribe to our newsletter!</h3>
+              <p>
+                Be ready to stay inform of our new offers and promotions ;)
+              </p>              
+            </div>
+          
+            <input type="email" id="emailpop" placeholder="example@example.com" />
+            <button type="submit" class="btn" id="submitpop">Send</button>
+            
+        </section>
+          
+          <div class="overlay hidden"></div>
+          
     </main>
-
     <footer class="pie">
         <h1>OXYGENShop</h1>
         <p>&copy; 2023 OXYGEN, All Rights Reserved</p>
@@ -185,6 +226,10 @@
             <a href="https://facebook.com" target="_blank"><img src="images/Logo Facebook.png" alt="logo facebook"></a>
         </div>
     </footer>
+    <button id="return-top">&#8593;</button>
 </body>
-
+<script src="scripts/app.js"></script>
+<script src="scripts/modalpopup.js"></script>
+<script src="scripts/divisas.js"></script>
+<script src="scripts/slider.js"></script>
 </html>
