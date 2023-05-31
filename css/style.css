@@ -580,7 +580,7 @@ header .navbar .hamburger.active .bar:nth-child(3) {
   margin-top: 100px;
   margin-bottom: 100px;
   gap: 40px;
-  transition: left 400ms linear;
+  transition: left 500ms linear;
 }
 
 #slider img {
