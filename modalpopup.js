@@ -75,7 +75,7 @@ const sendDataToServer = async (data) => {
         console.log(json);     
         
         if (submitPop.textContent=="Send") {
-            submitPop.textContent = "Tanks!";
+            submitPop.textContent = "Thanks!";
         }else{ 
         submitPop.textContent = "Send";
         }           
